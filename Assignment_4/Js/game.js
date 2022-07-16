@@ -26,8 +26,8 @@ function playRound(playerSelection, computerSelection) {
   console.log(`Computer played ${computerSelection}`);
   console.log(`Player played ${playerSelection}`);
 
-  // Check for Draw
-  if (playerSelection === computerSelection) return "Draw!";
+  // Check for Tie
+  if (playerSelection === computerSelection) return "It's tie!";
 
   // Check for Rock play
   if (playerSelection === 'rock') {
@@ -73,7 +73,7 @@ function game() {
   } else if (computerScore < playerScore) {
     console.log(`Player Won! Result is: ${playerScore} - ${computerScore}`);
   } else {
-    console.log(`Draw! Result is: ${playerScore} - ${computerScore}`);
+    console.log(`It's tie! Result is: ${playerScore} - ${computerScore}`);
   }
 }
 game();
